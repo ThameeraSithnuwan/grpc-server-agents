@@ -1,0 +1,39 @@
+// agent.proto
+
+syntax = "proto3";
+
+package agent;
+
+service AgentService {
+  rpc ping(PingRequest) returns (PingResponse);
+}
+
+service RestServer {
+  rpc registerAgent(AgentInfo) returns (AgentId);
+  rpc unregisterAgent(unregisterAgentReq) returns (Empty);
+}
+
+message PingRequest {
+  // Define your request message fields here
+}
+
+message PingResponse {
+  string message = 1;
+}
+
+message AgentInfo {
+  string address = 1;
+  string agentId = 2;
+}
+
+message AgentId {
+  int32 agent_id = 1;
+}
+
+message Empty {
+  
+}
+
+message unregisterAgentReq {
+      string agentId = 1;
+}

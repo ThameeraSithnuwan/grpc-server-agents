@@ -1,0 +1,22 @@
+{
+  "name": "grpc-server-agents",
+  "version": "1.0.0",
+  "description": "",
+  "main": "agent.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "agent1:dev": "nodemon agent1.js",
+    "agent2:dev": "nodemon agent2.js",
+    "server:dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.6",
+    "@grpc/proto-loader": "^0.7.12",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "uuidv4": "^6.2.13"
+  }
+}
