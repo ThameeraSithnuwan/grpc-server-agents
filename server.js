@@ -32,7 +32,7 @@ server.bindAsync('0.0.0.0:3000', ServerCredentials.createInsecure(), (err, port)
       console.error('Error binding server:', err);
       return;
     }
-    console.log(`REST server running at 0.0.0.0:3000`);
+    console.log(`GRPC server running at 0.0.0.0:3000`);
   
   });
 
