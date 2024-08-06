@@ -10,7 +10,7 @@ name: web-app-dev_app_d525751_env_31ddbbd Pipeline (Skyu Generated)
       - README.md
   workflow_dispatch: {}
   repository_dispatch:
-    types: pipeline_71a7bfe5-2795-473e-8543-630272c1ed1c
+    types: pipeline_ca52bda4-4a00-4e93-9b31-028692469880
 env:
   ENCODED_PIPELINE_SECRET: ${{secrets.GRPCSERVERAGENTS_WEBAPPDEV_APP_D525751_ENV_31DDBBD}}
   COMMIT_ID: ${{github.event.client_payload.commitId || github.sha || github.run_id}}
