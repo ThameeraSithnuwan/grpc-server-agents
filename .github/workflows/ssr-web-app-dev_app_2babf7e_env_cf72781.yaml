@@ -8,6 +8,10 @@ name: ssr-web-app-dev_app_2babf7e_env_cf72781 Pipeline (Skyu Generated)
       - .trivyignore
       - Readme.md
       - README.md
+    tags:
+      - test
+    paths:
+      - agent1.js
   workflow_dispatch: {}
   repository_dispatch:
     types: pipeline_b22d3511-b928-4090-9b37-b19f7eef2afe
