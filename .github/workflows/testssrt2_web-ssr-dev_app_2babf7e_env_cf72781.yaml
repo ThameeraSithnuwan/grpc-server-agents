@@ -151,7 +151,14 @@ jobs:
               echo "Hello Tests from SkyU"
               
       - name: Unit tests
-        run: "cd js/oneoff_coordinator\r\n\r\nif [ -f docker-compose.test.yml ]; then\r\n    docker compose -f docker-compose.test.yml up --exit-code-from sut --build sut\r\nelse\r\n    echo \"WARNING: No Test (define in docker-compose.test.yml)\"\r\nfi"
+        run: |-
+          cd js/oneoff_coordinator 
+           
+          if [ -f docker-compose.test.yml ]; then 
+              docker compose -f docker-compose.test.yml up --exit-code-from sut --build sut 
+          else 
+              echo "WARNING: No Test (define in docker-compose.test.yml)" 
+          fi
   _release-info:
     name: ' Release Info'
     permissions: write-all
